@@ -16,7 +16,7 @@ export default function Page() {
     const [cards, setCards] = useState<string[]>(["Ready"])
 
     useEffect(() => {
-        socket = io("http://pmcuyqqgep.a.pinggy.link:4000", { query: { name } });
+        socket = io(`http://${process.env.HOST}:${process.env.PORT || 4000}`, { query: { name } });
         socket.on("connect", () => {
             console.log("Olá")
         })
