@@ -18,7 +18,6 @@ export const CardsForm = ({ options, onSubmit }: CardsFormProps) => {
 
     const onSubmit_: SubmitHandler<CardsDrawerValues> = (data) => {
         reset()
-        console.log(reset)
         onSubmit(data)
     }
 

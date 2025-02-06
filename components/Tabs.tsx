@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/tabs"
 import { Button } from "@/components/Button"
 import { Input } from "@/components/Input"
-import { UsersRound } from "lucide-react"
+import { UsersRound, DoorOpen } from "lucide-react"
 
 export const TabsRoom = () => {
     return (
@@ -17,7 +17,8 @@ export const TabsRoom = () => {
             </TabsList>
             <TabsContent value="code">
                 <form className='flex flex-col gap-4' action="/room">
-                    <Input name="name" required className='outline-none' icon={UsersRound} placeholder='e.g. Cleyton' />
+                    <Input name="name" label="Player ID" required className='outline-none' icon={UsersRound} placeholder='e.g. Cleyton' />
+                    <Input type="tel" name="roomId" label="Room ID" required className='outline-none' icon={DoorOpen} placeholder='e.g. 0 - 100' />
                     <Button className='w-full'>Enter Room</Button>
                 </form>
             </TabsContent>
