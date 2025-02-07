@@ -34,7 +34,7 @@ export const CardsForm = ({ options, onSubmit }: CardsFormProps) => {
                     />
                 )}
             />
-            <Button type="submit" className="p-2" icon={SendHorizonal}></Button>
+            <Button type="submit" className="p-2 bg-color4 text-color1" icon={SendHorizonal}></Button>
         </form>
     )
 }

@@ -19,7 +19,7 @@ export const TabsRoom = () => {
                 <form className='flex flex-col gap-4' action="/room">
                     <Input name="name" label="Player ID" required className='outline-none' icon={UsersRound} placeholder='e.g. Cleyton' />
                     <Input type="tel" name="roomId" label="Room ID" required className='outline-none' icon={DoorOpen} placeholder='e.g. 0 - 100' />
-                    <Button className='w-full'>Enter Room</Button>
+                    <Button className='w-full bg-color4 text-color1'>Enter Room</Button>
                 </form>
             </TabsContent>
             <TabsContent value="lobby">
